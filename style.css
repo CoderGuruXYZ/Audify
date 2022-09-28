@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    /* Variables */
+
+    --color: whitesmoke;
+    --color2: rgb(200, 200, 200);
+
+    --main1: rgb(23,29,32);
+    --main2: rgb(30,37,41);
+    --main2p5: rgb(39, 49, 55);
+    --main3: rgb(47,49,51);
+
+    --main3T: rgba(47, 49, 51, 0.3);
+
+    --blue1: rgb(0,26,56);
+    --blue2: rgb(0,34,78);
+    --blue3: rgb(0,51,103);
+
+    /* Base Colouring */
+
+    background-color: var(--main2);
+
+    color: var(--color);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main1);
+
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main2p5);
+
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main3);
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 20vw;
+
+    padding: 20px;
+
+    background-color: var(--main1);
+}
+
+.title {
+    font-size: 44px;
+
+    font-weight: bold;
+
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.title .fa-solid {
+    font-size: 44px;
+
+    margin-left: auto;
+}
+
+.items {
+    width: 100%;
+}
+
+.item {
+    padding: 10px;
+
+    font-size: 22px;
+
+    width: 100%;
+}
+
+.itemLink {
+    text-decoration: none;
+
+    color: var(--color2);
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.itemLink .fa-solid {
+    font-size: 20px;
+
+    margin-right: 10px;
+}
+
+/* Main Area */
+
+.content {
+    width: 80vw;
+    height: 100vh;
+}
+
+.topbar {
+    height: 10vh;
+
+    background-color: var(--main3T);
+
+    padding: 13px;
+
+    font-size: calc(10vh - 30px);
+}
+
+.content-area {
+    width: 80vw;
+    height: calc(100vh - 10vh);
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Songs */
+
+.songs {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.song {
+    width: 200px;
+    height: 300px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+
+    background-color: var(--main1);
+
+    margin: 12.5px;
+}
+
+.songImage {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 20px;
+}
+
+.songInfo {
+    text-align: left;
+}
+
+.songTitle {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+
+    margin-bottom: auto;
+}
+
+.songDetails {
+    margin-top: 15px;
+    margin-bottom: -15px;
+
+    font-size: 18px;
+}
